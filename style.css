@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+body h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 1.2;
+    margin: 30px 0px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px 25px 0 0;
+    padding: 30px;
+    width: 100%;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.container h3 {
+    color: hsl(184, 14%, 56%);
+    font-weight: 500;
+    padding: 30px 0px 10px;
+}
+
+.container input {
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    width: 100%;
+    padding: 10px;
+}
+
+.input-icon {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-icon > h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-icon i {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 7.5px;
+}
+
+.container .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.container .button div {
+    width: 48%;
+}
+
+.container .button button {
+    font-size: 14px;
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    border: none;
+}
+
+.container .button button:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+
+#custom-bill {
+    font-size: 14px;
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    border: none;
+}
+
+#custom-bill:hover {
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+.container .button button.custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.result {
+    background-color: hsl(183, 100%, 15%);
+    padding: 20px 10px 10px;
+    margin: 20px 0px 20px;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.result .rr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.result .rr div {
+    width: 45%;
+    margin: 0px 5px 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.result .rr div span {
+    color: hsl(185, 41%, 84%);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.result .rr div:nth-child(even) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 24px;
+    color: hsl(185, 41%, 84%);
+    font-weight: 700;
+    padding: 0px;
+ }
+
+.result button {
+    margin: 5px 5px 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+#mainerror {
+    text-align: right;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.attribution a {
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        border-radius: 20px;
+        display: table;
+        border-collapse: separate;
+        width: 75vw;
+        margin: 0px auto 25px;
+        padding: 25px;
+    }
+
+    .container .calculation, .container .result {
+        width: 50%;
+        margin-top: 0px;
+        display: table-cell;
+    }
+
+    .container .result .rr {
+        padding: 15px;
+    }
+
+    .container .result .rr div {
+        margin-bottom: 50px;
+    }
+
+    .container .button div {
+        width: 30%;
+    }
+
+    .container .calculation {
+        padding-right: 25px;
+    }
+
+    .result button {
+        padding: 15px;
+        margin: 50px 0 25px;
+
+    }
+
+    input, button {
+        cursor: pointer;
+    }
+  }
