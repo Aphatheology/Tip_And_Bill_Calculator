@@ -43,7 +43,7 @@ Users should be able to:
 ### Continued development
 
 - Refactor the CSS Code
-- Fix the RESET Button to always be at the end of the container
+- Fix the RESET Button to always be at the end of the container - DONE
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
