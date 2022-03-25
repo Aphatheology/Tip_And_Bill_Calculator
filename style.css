@@ -81,7 +81,6 @@ h3 {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-
 }
 
 .container .button div {
@@ -161,13 +160,12 @@ h3 {
 }
 
 .result .rr div:nth-child(even) {
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    text-align: right;
     font-size: 24px;
     color: hsl(185, 41%, 84%);
     font-weight: 700;
     padding: 0px;
+    word-wrap: break-word;
  }
 
 .result button {
@@ -218,11 +216,9 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 750px) {
     .container {
         border-radius: 20px;
-        /* display: table;
-        border-collapse: separate; */
         display: flex;
         width: 75vw;
         margin: 0px auto 25px;
